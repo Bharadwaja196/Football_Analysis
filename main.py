@@ -1,6 +1,5 @@
-from utils import read_video, save_video
+from utils.video_utils import read_video, save_video
 from trackers import Tracker
-import cv2
 import numpy as np
 from team_assigner import TeamAssigner
 from player_ball_assigner import PlayerBallAssigner
@@ -81,7 +80,7 @@ def main():
     speed_and_distance_estimator.draw_speed_and_distance(output_video_frames,tracks)
 
     # Save video
-    save_video(output_video_frames, 'output_videos/output_video.avi')
+    save_video('output_videos/output_video.avi', video_frames)
 
 if __name__ == '__main__':
     main()
