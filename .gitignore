@@ -1,2 +1,27 @@
-*__pycahce__*
+# Python
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Videos
+input_videos/
+output_videos/
+
+# Models
+models/*.pt
+
+# Generated data / stubs
+stubs/*.pkl
+*.pkl
+
+# Training data
+training/
+
+# Heatmaps output
+output_heatmaps/
+
+# OS / IDE
+.vscode/
+.DS_Store
+Thumbs.db
