@@ -1,0 +1,25 @@
+# Python Ignores
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Models and Archives (Prevents 100MB+ Git upload failures)
+*.pt
+*.zip
+models/best*
+models/last*
+
+# Output & Raw Data
+*.avi
+*.mp4
+output_videos/
+input_videos/*.mp4
+input_videos/*.avi
+
+# Diagnostic and Pickle Stubs
+stubs/
+*.pkl
+
+# YOLO & Training Outputs
+runs/
+training/football-players-detection-1/
