@@ -89,5 +89,12 @@ def main():
     except Exception as e:
         print(f'Evaluation module threw an error but normal script finished: {e}')
 
+    print('\n[INFO] Generating football analytics visualizations...')
+    try:
+        from generate_analytics import generate_all_analytics
+        generate_all_analytics(tracks=tracks, team_ball_control=team_ball_control)
+    except Exception as e:
+        print(f'Analytics generation threw an error but normal script finished: {e}')
+
 if __name__ == '__main__':
     main()

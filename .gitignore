@@ -1,25 +1,81 @@
-# Python Ignores
+# ===========================
+# Python
+# ===========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
 
-# Models and Archives (Prevents 100MB+ Git upload failures)
+# ===========================
+# Virtual Environments
+# ===========================
+venv/
+env/
+.env
+.venv/
+conda-env/
+
+# ===========================
+# Model Weights (large files, 100MB+)
+# ===========================
 *.pt
+*.pth
+*.onnx
+*.engine
 *.zip
 models/best*
 models/last*
 
-# Output & Raw Data
+# ===========================
+# Videos & Media (large files)
+# ===========================
 *.avi
 *.mp4
-output_videos/
+*.mov
+*.mkv
 input_videos/*.mp4
 input_videos/*.avi
+output_videos/
 
-# Diagnostic and Pickle Stubs
+# ===========================
+# Tracking Stubs (cached data)
+# ===========================
 stubs/
 *.pkl
 
-# YOLO & Training Outputs
+# ===========================
+# YOLO Training & Evaluation Runs
+# ===========================
 runs/
 training/football-players-detection-1/
+
+# ===========================
+# IDE & OS
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Jupyter / Notebooks
+# ===========================
+*.ipynb
+.ipynb_checkpoints/
+
+# ===========================
+# Logs & Misc
+# ===========================
+*.log
+*.tmp
+*.bak
